@@ -13,6 +13,7 @@ const Pagination = props => {
         <nav>
             <ul className="pagination">
                 { pages.map(page => (
+                    // eslint-disable-next-line
                   <li key={page} className={ page === currentPage ? 'page-item active' : 'page-item'}><a className="page-link" onClick={() => onPageChange(page)}>{page}</a></li>  
                 
                 ))}  
